@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Place Order</title></head>
+<body>
+<h2>Place a New Order</h2>
+<form action="/orders/save" method="post">
+    <label>Stock Quote:</label>
+    <input type="text" name="stockQuote" placeholder="e.g. AAPL"/><br/>
+    <label>Price:</label>
+    <input type="number" name="price" step="0.01"/><br/>
+    <label>Quantity:</label>
+    <input type="number" name="quantity"/><br/>
+    <label>Date:</label>
+    <input type="text" name="date" placeholder="e.g. 2026-03-16"/><br/>
+    <button type="submit">Place Order</button>
+</form>
+</body>
+</html>
